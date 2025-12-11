@@ -11,10 +11,6 @@ public class Score {
         points++;
     }
 
-    public void reset() {
-        points = 0;
-    }
-
     public int getPoints() {
         return points;
     }

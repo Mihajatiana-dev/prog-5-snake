@@ -7,11 +7,14 @@ public class BadSnake {
     public static void main(String[] args) {
         try {
             Game game = new Game(SCREEN_HEIGHT, SCREEN_WIDTH);
+
+            game.addObserver(new ScoreObserver());
+
             game.start();
 
         } catch (Exception e) {
             System.err.println("Erreur lors de l'exécution du jeu: " + e.getMessage());
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }

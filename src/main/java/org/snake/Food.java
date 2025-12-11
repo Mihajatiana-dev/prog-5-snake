@@ -26,10 +26,6 @@ public class Food {
         this.position = generateRandomPosition();
     }
 
-    public Position getPosition() {
-        return position;
-    }
-
     public char getSymbol() {
         return FOOD_SYMBOL;
     }
